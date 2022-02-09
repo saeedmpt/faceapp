@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_20mdp"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/bg_background8"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/fontBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5mdp"
+                android:padding="@dimen/_8mdp"
+                android:text="@string/optionsPhoto"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1mdp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tvTakePhoto"
+                style="@style/fontBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5mdp"
+                android:onClick="onClick_take_ImageLoader"
+                android:padding="@dimen/_8mdp"
+                android:text="@string/takePhoto"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/font12" />
+
+            <View
+                android:id="@+id/vTakePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1mdp"
+                android:alpha="0.2"
+                android:background="@color/textColorHint" />
+
+            <TextView
+                android:id="@+id/tvChooseFromGallery"
+                style="@style/fontBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5mdp"
+                android:onClick="onClick_import_ImageLoader"
+                android:padding="@dimen/_8mdp"
+                android:text="@string/chooseFromGallery"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/font12" />
+
+            <View
+                android:id="@+id/vChooseFromGallery"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1mdp"
+                android:alpha="0.2"
+                android:background="@color/textColorHint" />
+
+            <TextView
+                android:id="@+id/tvNewPhoto"
+                style="@style/fontBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5mdp"
+                android:onClick="onClick_new_photo"
+                android:padding="@dimen/_8mdp"
+                android:text="@string/newPhoto"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/font12" />
+
+            <View
+                android:id="@+id/vNewPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1mdp"
+                android:alpha="0.2"
+                android:background="@color/textColorHint" />
+
+            <TextView
+                android:id="@+id/tvRemovePhoto"
+                style="@style/fontBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5mdp"
+                android:onClick="onClick_remove_photo"
+                android:padding="@dimen/_8mdp"
+                android:text="@string/removePhoto"
+                android:textColor="@color/red_primary"
+                android:textSize="@dimen/font12" />
+
+            <View
+                android:id="@+id/vRemovePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1mdp"
+                android:alpha="0.2"
+                android:background="@color/textColorHint" />
+
+
+            <TextView
+                style="@style/fontBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5mdp"
+                android:onClick="onClick_finish"
+                android:padding="@dimen/_8mdp"
+                android:text="@string/cancel"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/font12" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

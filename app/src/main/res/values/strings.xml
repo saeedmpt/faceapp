@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">PaddleGAN</string>
+    <string name="lurm2">you should use tools package instead because android: will change the layout direction not only in preview but also in the app.</string>
+    <string name="search">Search</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="OK">OK</string>
+    <string name="no">No</string>
+
+    <string name="pleaswait">Please Wait</string>
+    <string name="errorconnection">No Internet</string>
+    <string name="error_connection">Error Connection</string>
+    <string name="tryconnection">Retry Connection</string>
+    <string name="errorserver">Error Server</string>
+    <string name="noData">Not Exist Data</string>
+    <string name="takePhoto">Take Photo</string>
+    <string name="chooseFromGallery">Choose From Gallery</string>
+    <string name="optionsPhoto">Options Photo</string>
+    <string name="newPhoto">New Photo</string>
+    <string name="removePhoto">Remove Photo</string>
+    <string name="error_body">Error Body</string>
+    <string name="textExit"><![CDATA[<font color=\"#ffffff\">Press the </font><font color=\"#ffed23\">Back</font><font color=\"#ffffff\"> button again to exit</font>]]></string>
+    <string name="stopedUpload">Stoped upload</string>
+    <string name="textStopUpload">Do you want to cancel the upload? </string>
+    <string name="textUploadedImageAndWaitForResponse">Your Image Uploaded.\nWhen your image is ready, we will send you a notification push...</string>
+    <string name="stopUpload">Stop Upload</string>
+    <string name="logoutAccount">Logout Account</string>
+    <string name="logoutAccountText">Are you sure?</string>
+
+    <string name="pleaseAccessNeed">Please be given the necessary access </string>
+    <string name="wating">Wating</string>
+
+    <string name="textShare">text for share ...</string>
+    <string name="textVerifyAfterUpload">we will notify you after reviewing selfie.</string>
+    <string name="app_version">App Version</string>
+    <string name="more">More</string>
+    <string name="myReport">My Report</string>
+    <string name="feedback">Feedback</string>
+    <string name="share">Share</string>
+
+</resources>

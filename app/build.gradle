@@ -1,0 +1,136 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+apply plugin: 'com.google.gms.google-services'  // Google Services plugin
+android {
+    compileSdkVersion 31
+
+    defaultConfig {
+        applicationId "com.saeedmpt.faceapp"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+
+        buildConfigField "String", "FCM_TOPIC", "\"global\""//نام تاپیک فایربیس
+
+    }
+//region Flavor update
+    flavorDimensions "version"
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            def flavor = variant.name
+            def applicationId = variant.applicationId
+            def versionName = variant.versionName
+
+            applicationId = applicationId.substring(applicationId.lastIndexOf(".") + 1)
+            outputFileName = "${applicationId}_${flavor}_V${versionName}_b${versionCode}.apk"
+            outputFileName = outputFileName.replace("android", "faceapp")
+            outputFileName = outputFileName.replace("Release", "")
+            outputFileName = outputFileName.replace("_release", "")
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+}
+
+dependencies {
+    //base
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0'
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    //main
+    implementation 'com.pusher:pusher-java-client:2.2.6'
+//pusher.com/tutorials/android-messenger-presence-kotlin
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'jp.wasabeef:glide-transformations:4.0.1'//glide component
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.hieupt:retrofit2-queue:1.0.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.12'
+    implementation "com.squareup.okhttp3:logging-interceptor:3.12.12"//log response retrofit
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation("com.google.guava:guava:30.0-android")
+    //firebase
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:28.4.2')
+    // Declare the dependencies for the desired Firebase products without specifying versions
+    // For example, declare the dependencies for Firebase Authentication and Cloud Firestore
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-analytics'
+    //admob
+    implementation 'com.google.android.gms:play-services-ads:20.4.0'
+
+    implementation 'android.arch.lifecycle:extensions:1.1.1'//viewModel live data ,...
+    implementation 'org.greenrobot:eventbus:3.2.0'//event bus
+    //ui
+    implementation 'com.github.MrNouri:DynamicSizes:1.0'//dynamic size
+    implementation 'me.zhanghai.android.materialprogressbar:library:1.6.1'  //progressbar
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'//loading view
+    implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.1.2'
+    implementation 'com.github.mutasemhajhasan:BooleanSelectionView:1.3.0'//switch
+    implementation 'com.github.Jay-Goo:RangeSeekBar:v3.0.0'
+    //implementation 'com.github.BartNijland91:android-countrycodepickerdialog:v1.1'
+    //implementation 'com.github.smarteist:autoimageslider:1.4.0'//slider
+    implementation 'com.github.shasin89:NotificationBanner:1.1.5'
+    implementation 'com.codemybrainsout.rating:ratingdialog:1.0.8'
+    //util
+    //implementation 'com.infstory:proguard-snippets:1.0.0'//progurd errors
+    implementation 'com.karumi:dexter:4.2.0'//permission0
+    implementation 'io.paperdb:paperdb:2.7.1'//save list to sharedPref
+    implementation 'cat.ereza:customactivityoncrash:2.3.0'//crash reporter
+    implementation 'com.github.jkwiecien:EasyImage:1.3.1'//image picker
+    implementation 'com.soundcloud.android:android-crop:1.0.1@aar'//crop image
+    implementation 'com.google.android.gms:play-services-location:18.0.0'//for location
+    debugImplementation 'com.readystatesoftware.chuck:library:1.1.0'
+//monitor api request in notification just debug mode
+    releaseImplementation 'com.readystatesoftware.chuck:library-no-op:1.1.0'
+    implementation 'com.danikula:videocache:2.7.1'//cache voice
+
+    //
+    // implementation "android.arch.lifecycle:common-java8:1.1.1"
+    //implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+
+    implementation 'com.camerakit:camerakit:1.0.0-beta3.10'//take selfi
+    implementation 'com.camerakit:jpegkit:0.1.0'//take selfi
+
+
+
+}

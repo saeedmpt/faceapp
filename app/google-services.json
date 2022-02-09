@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "633472859275",
+    "project_id": "hoora-7e41d",
+    "storage_bucket": "hoora-7e41d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633472859275:android:ce9c674ee982e8a90de88e",
+        "android_client_info": {
+          "package_name": "com.saeedmpt.faceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633472859275-a3198859sbcfj70shhaabq3hta5ft571.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmLWGdSSIqVdT7gJA7afUkbEgfftFjswA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633472859275-a3198859sbcfj70shhaabq3hta5ft571.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

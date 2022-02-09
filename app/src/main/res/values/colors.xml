@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F58D8C</color>
+    <color name="colorPrimaryVariant">#EA8483</color>
+    <color name="colorOnPrimary">#FFFFFFFF</color>
+
+    <color name="colorSecondery">#6A768C</color>
+    <color name="colorSeconderyVariant">#535E73</color>
+    <color name="colorOnSecondery">#434343</color>
+
+    <color name="textColorPrimary">@color/black</color>
+    <color name="textColorSecondery">@color/gray_747E8F</color>
+
+    <color name="textColorHint">#979EAA</color>
+    <color name="background">#FAF9FF</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="bgCard">#ffffff</color>
+    <color name="white06">#aaffffff</color>
+
+    <color name="bgEditText">#EEEEEF</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="gray_747E8F">#747E8F</color>
+    <color name="red_primary">#C10F0F</color>
+
+
+</resources>

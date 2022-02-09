@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        tools:ignore="MissingPrefix">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bottom_sheet"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_24mdp"
+            android:paddingVertical="@dimen/_14mdp">
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/fontBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_6mdp"
+                android:text="@string/app_name"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/font12" />
+
+            <TextView
+                android:id="@+id/tvDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_6mdp"
+                android:layout_marginTop="@dimen/_10mdp"
+                android:text="@string/lurm2"
+                android:textColor="@color/textColorSecondery"
+                android:textSize="@dimen/font10" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18mdp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rlLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_6mdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_primary8">
+
+                    <TextView
+                        android:id="@+id/tvOk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="@dimen/_4mdp"
+                        android:text="@string/yes"
+                        android:textColor="@color/colorOnPrimary"
+                        android:textSize="@dimen/_12font_mdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlClose"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_6mdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_secondery">
+
+                    <TextView
+                        android:id="@+id/tvCancle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="@dimen/_4mdp"
+                        android:text="@string/no"
+                        android:textColor="@color/textColorSecondery"
+                        android:textSize="@dimen/_12font_mdp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

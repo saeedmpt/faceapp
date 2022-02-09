@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textColorPrimary">@color/white</color>
+    <color name="textColorSecondery">@color/white</color>
+
+    <color name="bgEditText">#5E5E5E</color>
+    <color name="background">#12120f</color>
+    <color name="bgCard">#252520</color>
+
+
+</resources>

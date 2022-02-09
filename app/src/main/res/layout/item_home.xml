@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <!--<data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="distanceHide"
+            type="Boolean" />
+
+        <variable
+            name="item"
+            type="com.saeedmpt.chatapp.model.UserModel" />
+    </data>-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_card">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_8mdp"
+            android:layout_marginTop="@dimen/_6mdp"
+            android:layout_marginBottom="@dimen/_10mdp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:orientation="vertical"
+            app:cardBackgroundColor="@color/bgCard"
+            app:cardCornerRadius="@dimen/_12mdp"
+            app:cardElevation="0dp"
+            app:contentPadding="@dimen/_6mdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10mdp"
+                    android:layout_marginEnd="@dimen/_8mdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        style="@style/fontBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="@dimen/font14"
+                        tools:text="Face Morphing" />
+
+
+                    <TextView
+                        android:id="@+id/tvContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/_4mdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textColorSecondery"
+                        android:textSize="@dimen/font10"
+                        tools:text="Please check your fortune report today." />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivImage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/img_face_morphing" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>
