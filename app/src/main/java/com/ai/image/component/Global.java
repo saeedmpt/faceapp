@@ -1,4 +1,4 @@
-package com.ai.chatapp.component;
+package com.ai.image.component;
 
 
 import static android.os.Build.VERSION.SDK_INT;
@@ -34,10 +34,10 @@ import com.google.android.gms.ads.MobileAds;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
-import com.ai.chatapp.BuildConfig;
-import com.ai.chatapp.R;
-import com.ai.chatapp.net.ApiService;
-import com.ai.chatapp.utility.MyConstants;
+import com.ai.image.BuildConfig;
+import com.ai.image.R;
+import com.ai.image.net.ApiService;
+import com.ai.image.utility.MyConstants;
 
 import java.lang.reflect.Type;
 import java.text.DecimalFormat;

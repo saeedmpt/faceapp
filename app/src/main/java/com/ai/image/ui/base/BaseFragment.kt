@@ -1,4 +1,4 @@
-package com.ai.chatapp.ui.base
+package com.ai.image.ui.base
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

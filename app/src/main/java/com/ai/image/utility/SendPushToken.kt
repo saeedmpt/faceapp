@@ -1,10 +1,10 @@
-package com.ai.chatapp.utility
+package com.ai.image.utility
 
 import android.util.Log
-import com.ai.chatapp.component.Global
-import com.ai.chatapp.net.RepositoryData.initConnection
+import com.ai.image.component.Global
+import com.ai.image.net.RepositoryData.initConnection
 import okhttp3.ResponseBody
-import com.ai.chatapp.net.CounteryPresenterListener
+import com.ai.image.net.CounteryPresenterListener
 import retrofit2.Call
 
 class SendPushToken(token: String?) {

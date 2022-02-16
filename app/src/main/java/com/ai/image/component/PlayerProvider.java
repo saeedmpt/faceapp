@@ -1,4 +1,4 @@
-package com.ai.chatapp.component;
+package com.ai.image.component;
 
 import android.app.Activity;
 import android.content.Context;
@@ -8,8 +8,8 @@ import android.os.PowerManager;
 import android.util.Log;
 
 import com.danikula.videocache.HttpProxyCacheServer;
-import com.ai.chatapp.model.PlayerEvent;
-import com.ai.chatapp.utility.PaperBook;
+import com.ai.image.model.PlayerEvent;
+import com.ai.image.utility.PaperBook;
 
 import org.greenrobot.eventbus.EventBus;
 

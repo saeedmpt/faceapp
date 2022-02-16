@@ -1,14 +1,14 @@
-package com.ai.chatapp.adapter
+package com.ai.image.adapter
 
 import android.content.Context
 import androidx.recyclerview.widget.RecyclerView
-import com.ai.chatapp.model.HomeModel
-import com.ai.chatapp.interfaces.ICallBack
+import com.ai.image.model.HomeModel
+import com.ai.image.interfaces.ICallBack
 import android.view.ViewGroup
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
-import com.ai.chatapp.R
+import com.ai.image.R
 import androidx.core.content.ContextCompat
 import android.widget.TextView
 import java.util.ArrayList

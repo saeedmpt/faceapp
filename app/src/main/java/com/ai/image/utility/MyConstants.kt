@@ -1,7 +1,7 @@
-package com.ai.chatapp.utility
+package com.ai.image.utility
 
-import com.ai.chatapp
-import com.ai.chatapp.model.HomeModel
+import com.ai.image.R
+import com.ai.image.model.HomeModel
 import java.util.ArrayList
 
 object MyConstants {

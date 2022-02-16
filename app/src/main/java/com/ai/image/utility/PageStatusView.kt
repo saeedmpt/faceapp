@@ -1,4 +1,4 @@
-package com.ai.chatapp.utility
+package com.ai.image.utility
 
 import android.view.View
 

@@ -1,4 +1,4 @@
-package com.ai.chatapp.component
+package com.ai.image.component
 
 import androidx.annotation.RequiresApi
 import android.os.Build

@@ -1,10 +1,10 @@
-package com.ai.chatapp.net
+package com.ai.image.net
 
 import com.readystatesoftware.chuck.ChuckInterceptor
-import com.ai.chatapp.component.Global
-import com.ai.chatapp.model.api.*
-import com.ai.chatapp.utility.MyConstants
-import com.ai.chatapp.utility.PaperBook
+import com.ai.image.component.Global
+import com.ai.image.model.api.*
+import com.ai.image.utility.MyConstants
+import com.ai.image.utility.PaperBook
 import okhttp3.*
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Call

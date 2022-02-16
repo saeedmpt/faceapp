@@ -1,22 +1,22 @@
-package com.ai.chatapp.ui.main
+package com.ai.image.ui.main
 
-import com.ai.chatapp.utility.PageStatusView.pageStatusView
-import com.ai.chatapp.ui.base.BaseFragment
-import com.ai.chatapp.model.HomeModel
+import com.ai.image.utility.PageStatusView.pageStatusView
+import com.ai.image.ui.base.BaseFragment
+import com.ai.image.model.HomeModel
 import androidx.fragment.app.FragmentActivity
-import com.ai.chatapp.adapter.HomeAdapter
+import com.ai.image.adapter.HomeAdapter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import com.ai.chatapp.R
-import com.ai.chatapp.interfaces.ICallBack
+import com.ai.image.R
+import com.ai.image.interfaces.ICallBack
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.ai.chatapp.databinding.FragmentHomeBinding
-import com.ai.chatapp.model.EventModel
-import com.ai.chatapp.utility.MyConstants
+import com.ai.image.databinding.FragmentHomeBinding
+import com.ai.image.model.EventModel
+import com.ai.image.utility.MyConstants
 import org.greenrobot.eventbus.EventBus
 import java.util.ArrayList
 

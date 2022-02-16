@@ -1,4 +1,4 @@
-package com.ai.chatapp.net;
+package com.ai.image.net;
 
 import org.jetbrains.annotations.Nullable;
 

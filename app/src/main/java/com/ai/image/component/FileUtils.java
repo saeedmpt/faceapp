@@ -1,4 +1,4 @@
-package com.ai.chatapp.component;
+package com.ai.image.component;
 
 import android.content.ContentResolver;
 import android.content.ContentUris;

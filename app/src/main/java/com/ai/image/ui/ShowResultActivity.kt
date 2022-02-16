@@ -1,6 +1,6 @@
-package com.ai.chatapp.ui
+package com.ai.image.ui
 
-import com.ai.chatapp.ui.base.BaseActivity
+import com.ai.image.ui.base.BaseActivity
 import android.app.Activity
 import android.content.ContentValues
 import android.content.Context
@@ -20,15 +20,15 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.SimpleTarget
 import com.bumptech.glide.request.transition.Transition
-import com.ai.chatapp.R
-import com.ai.chatapp.databinding.ActivityShowResultBinding
+import com.ai.image.R
+import com.ai.image.databinding.ActivityShowResultBinding
 import java.io.File
 import java.io.FileOutputStream
 import java.io.OutputStream
 import androidx.core.content.FileProvider
 import java.io.IOException
 import android.content.Intent
-import com.ai.chatapp.BuildConfig
+import com.ai.image.BuildConfig
 
 
 class ShowResultActivity : BaseActivity() {

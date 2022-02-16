@@ -1,4 +1,4 @@
-package com.ai.chatapp.utility
+package com.ai.image.utility
 
 import com.esotericsoftware.minlog.Log
 import com.google.gson.Gson

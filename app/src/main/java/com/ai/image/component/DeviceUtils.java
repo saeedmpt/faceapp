@@ -1,4 +1,4 @@
-package com.ai.chatapp.component;
+package com.ai.image.component;
 
 import android.Manifest;
 import android.bluetooth.BluetoothAdapter;

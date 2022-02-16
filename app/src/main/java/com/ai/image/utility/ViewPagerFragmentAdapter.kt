@@ -1,4 +1,4 @@
-package com.ai.chatapp.utility
+package com.ai.image.utility
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

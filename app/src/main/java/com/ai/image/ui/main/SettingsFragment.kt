@@ -1,19 +1,19 @@
-package com.ai.chatapp.ui.main
+package com.ai.image.ui.main
 
-import com.ai.chatapp.utility.PaperBook.logout
-import com.ai.chatapp.ui.base.BaseFragment
+import com.ai.image.utility.PaperBook.logout
+import com.ai.image.ui.base.BaseFragment
 import androidx.fragment.app.FragmentActivity
-import com.ai.chatapp.component.DialogCustom
+import com.ai.image.component.DialogCustom
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import com.ai.chatapp.R
+import com.ai.image.R
 import android.content.Intent
 import android.view.View
-import com.ai.chatapp.databinding.FragmentSettingBinding
-import com.ai.chatapp.ui.main.settings.MyRatingDialog
-import com.ai.chatapp.ui.main.settings.WebviewActivity
+import com.ai.image.databinding.FragmentSettingBinding
+import com.ai.image.ui.main.settings.MyRatingDialog
+import com.ai.image.ui.main.settings.WebviewActivity
 
 class SettingsFragment : BaseFragment() {
     private lateinit var contInst: FragmentActivity

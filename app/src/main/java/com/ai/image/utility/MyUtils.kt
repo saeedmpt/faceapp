@@ -1,4 +1,4 @@
-package com.ai.chatapp.utility
+package com.ai.image.utility
 
 import kotlin.io.readText
 import android.util.DisplayMetrics
@@ -6,7 +6,7 @@ import android.app.Activity
 import android.widget.Toast
 import okhttp3.ResponseBody
 import org.json.JSONObject
-import com.ai.chatapp.R
+import com.ai.image.R
 import org.json.JSONException
 import android.content.ClipData
 import android.content.ClipboardManager

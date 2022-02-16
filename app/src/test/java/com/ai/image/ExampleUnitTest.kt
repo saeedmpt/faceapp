@@ -1,4 +1,4 @@
-package com.ai.chatapp
+package com.ai.image
 
 import org.junit.Test
 

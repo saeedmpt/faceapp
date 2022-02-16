@@ -1,4 +1,4 @@
-package com.ai.chatapp.adapter;
+package com.ai.image.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,8 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.ai.chatapp.R;
-import com.ai.chatapp.model.HomeModel;
+import com.ai.image.R;
+import com.ai.image.model.HomeModel;
 
 import java.util.ArrayList;
 

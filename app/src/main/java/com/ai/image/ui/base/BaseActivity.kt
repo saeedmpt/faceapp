@@ -1,4 +1,4 @@
-package com.ai.chatapp.ui.base
+package com.ai.image.ui.base
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

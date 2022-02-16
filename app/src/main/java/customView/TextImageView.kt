@@ -4,7 +4,7 @@ import android.content.Context
 import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatTextView
-import com.saeedmpt.chatapp.R
+import com.ai.image.R
 
 class TextImageView : AppCompatTextView {
 

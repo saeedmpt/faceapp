@@ -1,4 +1,4 @@
-package com.ai.chatapp.model
+package com.ai.image.model
 
 import android.content.Intent
 

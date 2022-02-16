@@ -1,14 +1,14 @@
-package com.ai.chatapp.ui.main
+package com.ai.image.ui.main
 
 import android.Manifest
-import com.ai.chatapp.utility.PageStatusView.pageStatusView
-import com.ai.chatapp.ui.base.BaseFragment
+import com.ai.image.utility.PageStatusView.pageStatusView
+import com.ai.image.ui.base.BaseFragment
 import androidx.fragment.app.FragmentActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import com.ai.chatapp.R
+import com.ai.image.R
 import android.app.Activity
 import android.content.Intent
 import android.view.View
@@ -17,16 +17,16 @@ import com.karumi.dexter.Dexter
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener
 import com.karumi.dexter.MultiplePermissionsReport
 import com.karumi.dexter.PermissionToken
-import com.ai.chatapp.component.DialogCustom
+import com.ai.image.component.DialogCustom
 import android.widget.Toast
 import com.karumi.dexter.listener.PermissionRequest
-import com.ai.chatapp.adapter.SpinnerAdapter
-import com.ai.chatapp.component.Global
-import com.ai.chatapp.databinding.FragmentSelectFileBinding
-import com.ai.chatapp.model.EventModel
-import com.ai.chatapp.model.HomeModel
-import com.ai.chatapp.ui.ShowResultActivity
-import com.ai.chatapp.utility.*
+import com.ai.image.adapter.SpinnerAdapter
+import com.ai.image.component.Global
+import com.ai.image.databinding.FragmentSelectFileBinding
+import com.ai.image.model.EventModel
+import com.ai.image.model.HomeModel
+import com.ai.image.ui.ShowResultActivity
+import com.ai.image.utility.*
 import org.greenrobot.eventbus.EventBus
 import kotlin.collections.ArrayList
 

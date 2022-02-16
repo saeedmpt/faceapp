@@ -1,4 +1,4 @@
-package com.ai.chatapp.model.api
+package com.ai.image.model.api
 
 import com.google.gson.annotations.SerializedName
 import com.google.gson.annotations.Expose

@@ -1,4 +1,4 @@
-package com.ai.chatapp.component;
+package com.ai.image.component;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -10,8 +10,8 @@ import android.view.Window;
 
 import androidx.databinding.DataBindingUtil;
 
-import com.ai.chatapp.R;
-import com.ai.chatapp.databinding.CompDialogCustomBinding;
+import com.ai.image.R;
+import com.ai.image.databinding.CompDialogCustomBinding;
 
 public class DialogCustom extends Dialog {
 

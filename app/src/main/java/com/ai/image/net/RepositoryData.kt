@@ -1,9 +1,9 @@
-package com.ai.chatapp.net
+package com.ai.image.net
 
 import android.content.Context
 import android.net.ConnectivityManager
 import android.util.Log
-import com.ai.chatapp.component.Global
+import com.ai.image.component.Global
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

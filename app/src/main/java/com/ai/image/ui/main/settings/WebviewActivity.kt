@@ -1,12 +1,12 @@
-package com.ai.chatapp.ui.main.settings
+package com.ai.image.ui.main.settings
 
 import androidx.databinding.DataBindingUtil
-import com.ai.chatapp.R
+import com.ai.image.R
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.WebChromeClient
-import com.ai.chatapp.databinding.ActivityWebviewBinding
+import com.ai.image.databinding.ActivityWebviewBinding
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
 
 class WebviewActivity : AppCompatActivity() {

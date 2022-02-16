@@ -1,17 +1,17 @@
-package com.ai.chatapp.ui
+package com.ai.image.ui
 
 import android.content.Context
-import com.ai.chatapp.utility.PageStatusView.pageStatusView
-import com.ai.chatapp.ui.base.BaseActivity
+import com.ai.image.utility.PageStatusView.pageStatusView
+import com.ai.image.ui.base.BaseActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import com.ai.chatapp.R
+import com.ai.image.R
 import android.content.Intent
 import android.os.Handler
 import android.view.View
-import com.ai.chatapp.databinding.ActivitySplashBinding
-import com.ai.chatapp.utility.MyConstants.ACTION_TYPE
-import com.ai.chatapp.utility.MyConstants.VALUE_TYPE
+import com.ai.image.databinding.ActivitySplashBinding
+import com.ai.image.utility.MyConstants.ACTION_TYPE
+import com.ai.image.utility.MyConstants.VALUE_TYPE
 
 class SplashActivity : BaseActivity() {
     private var binding: ActivitySplashBinding? = null

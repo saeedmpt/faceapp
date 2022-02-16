@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.saeedmpt.chatapp">
+    package="com.ai.image">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -20,7 +20,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:name=".component.Global"
+        android:name="com.ai.image.component.Global"
         android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -34,7 +34,7 @@
         tools:replace="android:allowBackup"
         tools:targetApi="n">
         <activity
-            android:name=".ui.SplashActivity"
+            android:name="com.ai.image.ui.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -44,17 +44,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.main.settings.WebviewActivity"
+            android:name="com.ai.image.ui.main.settings.WebviewActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".ui.MainActivity"
+            android:name="com.ai.image.ui.MainActivity"
             android:configChanges="keyboardHidden|orientation"
             android:exported="false"
             android:screenOrientation="nosensor" />
         <activity
-            android:name=".utility.ImportLoaderDialog"
+            android:name="com.ai.image.utility.ImportLoaderDialog"
             android:exported="false"
             android:theme="@style/DialogWrapHeight" />
         <activity
@@ -62,12 +62,12 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.ShowResultActivity"
+            android:name="com.ai.image.ui.ShowResultActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
 
         <provider
-            android:name=".component.MyFileProvider"
+            android:name="com.ai.image.component.MyFileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true">
@@ -81,7 +81,7 @@
             android:value="ca-app-pub-3940256099942544~3347511713" />
 
         <service
-            android:name=".utility.MyFirebaseMessagingService"
+            android:name="com.ai.image.utility.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

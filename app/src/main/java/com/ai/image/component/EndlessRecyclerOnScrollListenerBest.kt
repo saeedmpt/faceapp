@@ -1,4 +1,4 @@
-package com.ai.chatapp.component
+package com.ai.image.component
 
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView

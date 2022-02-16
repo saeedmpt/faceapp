@@ -1,9 +1,9 @@
-package com.ai.chatapp.ui.main.settings
+package com.ai.image.ui.main.settings
 
 import android.app.Dialog
-import com.ai.chatapp.utility.PaperBook.setRate
+import com.ai.image.utility.PaperBook.setRate
 import androidx.databinding.DataBindingUtil
-import com.ai.chatapp.R
+import com.ai.image.R
 import android.widget.RatingBar.OnRatingBarChangeListener
 import android.widget.RatingBar
 import android.content.Intent
@@ -11,8 +11,8 @@ import android.content.ActivityNotFoundException
 import android.content.Context
 import android.net.Uri
 import android.view.*
-import com.ai.chatapp.component.Global
-import com.ai.chatapp.databinding.DialogRatingBinding
+import com.ai.image.component.Global
+import com.ai.image.databinding.DialogRatingBinding
 
 class MyRatingDialog(private val contInst: Context, private val type: String) : Dialog(
     contInst) {

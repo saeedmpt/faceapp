@@ -1,4 +1,4 @@
-package com.ai.chatapp.component;
+package com.ai.image.component;
 
 import android.os.Handler;
 import android.os.Looper;

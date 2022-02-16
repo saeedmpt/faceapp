@@ -1,4 +1,4 @@
-package com.ai.chatapp.interfaces;
+package com.ai.image.interfaces;
 
 public interface ICallBack<T> {
 
