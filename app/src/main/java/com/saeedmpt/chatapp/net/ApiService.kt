@@ -54,7 +54,7 @@ class ApiService {
                     .url()
                     .newBuilder()
                     //.addQueryParameter("os", "1")//android=1 , ios=0
-                    .addQueryParameter("deviceId", Global.getDeviceId())
+                   // .addQueryParameter("deviceId", Global.getDeviceId())
                 chain.proceed(chain.request().newBuilder().url(url.build()).build())
             }
             .addInterceptor(logging)

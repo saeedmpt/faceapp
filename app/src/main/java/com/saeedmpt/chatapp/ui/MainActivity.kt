@@ -17,6 +17,7 @@ import com.google.android.material.snackbar.Snackbar
 import android.text.Html
 import android.util.Log
 import android.widget.ImageView
+import android.widget.Toast
 import com.saeedmpt.chatapp.ui.main.HomeFragment
 import com.saeedmpt.chatapp.ui.main.SettingsFragment
 import androidx.viewpager2.widget.ViewPager2
@@ -29,6 +30,7 @@ import java.util.ArrayList
 import com.saeedmpt.chatapp.model.EventModel
 import com.saeedmpt.chatapp.model.OnActivityResultModel
 import com.saeedmpt.chatapp.ui.main.SelectFileFragment
+import com.saeedmpt.chatapp.utility.PaperBook
 import com.saeedmpt.chatapp.utility.PaperBook.setFirebaseToken
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
@@ -51,6 +53,23 @@ class MainActivity : BaseActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         contInst = this
         setLastFragmentMain(currentFragment)
+
+        FirebaseMessaging.getInstance().token.addOnCompleteListener(OnCompleteListener { task ->
+            if (!task.isSuccessful) {
+                Log.w("TAG", "Fetching FCM registration token failed", task.exception)
+                return@OnCompleteListener
+            }
+
+            // Get new FCM registration token
+            val token = task.result
+
+            // Log and toast
+            val msg = token
+            Log.d("TAG", msg)
+            Log.d("TAG", PaperBook.firebaseToken)
+            Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
+        })
+
         /*val intent = intent
         if (intent != null && intent.extras != null) {
             val extras = intent.extras

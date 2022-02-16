@@ -6,12 +6,12 @@ plugins {
 
 apply plugin: 'com.google.gms.google-services'  // Google Services plugin
 android {
-    compileSdkVersion 31
+    compileSdkVersion 30
 
     defaultConfig {
-        applicationId "com.saeedmpt.faceapp"
+        applicationId "com.image.editor.face.changer.fun.ai.faceapp.avatar.sticker"
         minSdkVersion 21
-        targetSdkVersion 31
+        targetSdkVersion 30
         versionCode 1
         versionName "1.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

@@ -360,7 +360,7 @@ class ImportLoaderDialog : AppCompatActivity() {
                             setResult(RESULT_OK, returnIntent)
                             finish()
                         } else {
-                            if (response.body()!!.path != null) {
+                            if (response.body()?.path != null) {
                                 //Toast.makeText(activity, response.body().getMsg(), Toast.LENGTH_SHORT).show();
                                 val returnIntent = Intent()
                                 returnIntent.data = uri
