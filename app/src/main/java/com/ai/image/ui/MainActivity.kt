@@ -67,9 +67,8 @@ class MainActivity : BaseActivity() {
             val msg = token
             Log.d("TAG", msg)
             Log.d("TAG", PaperBook.firebaseToken)
-            Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
+           // Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
         })
-
         /*val intent = intent
         if (intent != null && intent.extras != null) {
             val extras = intent.extras

@@ -40,6 +40,7 @@ import com.karumi.dexter.listener.PermissionRequest
 import com.ai.image.component.FileUtils
 import com.ai.image.component.Global
 import com.ai.image.databinding.DialogImportLoaderBinding
+import com.ai.image.utility.PaperBook.firebaseToken
 import com.soundcloud.android.crop.Crop
 import okhttp3.MediaType
 import retrofit2.Call
@@ -215,13 +216,15 @@ class ImportLoaderDialog : AppCompatActivity() {
                 try {
                     val photo = result!!.extras!!["data"] as Bitmap?
                     val tempUri = getImageUri(contInst, photo)
-                    val destination = Uri.fromFile(File(cacheDir, "cropped_Take_Photo$ii"))
+                    //val destination = Uri.fromFile(File(cacheDir, "cropped_Take_Photo$ii"))
+                    val destination = Uri.fromFile(File(cacheDir, firebaseToken))
                     Crop.of(tempUri, destination).asSquare().withMaxSize(1000, 1000).start(this)
                 } catch (e: Exception) {
                 }
             }
             if (requestCode == Crop.REQUEST_PICK) {
-                val destination = Uri.fromFile(File(cacheDir, "cropped_REQUEST_PICK$ii"))
+                //val destination = Uri.fromFile(File(cacheDir, "cropped_REQUEST_PICK$ii"))
+                val destination = Uri.fromFile(File(cacheDir, firebaseToken))
                 Crop.of(result!!.data, destination).asSquare().withMaxSize(1000, 1000).start(this)
             } else if (requestCode == Crop.REQUEST_CROP) {
                 //Toast.makeText(conInst, "ok", Toast.LENGTH_SHORT).show();

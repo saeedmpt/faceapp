@@ -55,7 +55,7 @@ object MyUtils {
             if (errorBody != null) {
                 var jsonObj: JSONObject? = null
                 jsonObj = JSONObject(errorBody.charStream().readText())
-                val errorText = jsonObj.getString("error")
+                val errorText = jsonObj.toString()
                 setToastMessage(contInst, errorText)
                 return errorText
             } else {
