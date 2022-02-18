@@ -19,7 +19,7 @@ object MyConstants {
     const val param_filter = "filter"
 
     const val route_firebase = "firebase"
-    const val param_firebase_token = "firebase_token";
+    const val param_firebase_token = "token";
 
     //intent code
     const val VALUE_TYPE = "valueType"
